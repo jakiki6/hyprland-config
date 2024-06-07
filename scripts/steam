@@ -1,0 +1,3 @@
+#!/bin/bash
+
+(dbus-run-session -- flatpak run com.valvesoftware.Steam &) > /dev/null 2> /dev/null
