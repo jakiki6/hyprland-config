@@ -2,6 +2,8 @@
 
 BASE=$(pwd)
 
+(echo \(define %hashes \(list
+
 for BRANCH in kernelpanicroom dalaptop; do
     echo -ne \(list \"$BRANCH\"\ 
 
@@ -16,3 +18,5 @@ for BRANCH in kernelpanicroom dalaptop; do
 
     popd > /dev/null
 done
+
+echo \)\)) | scmfmt
