@@ -2,12 +2,7 @@
 
 export PATH=$PATH:~/.guix-profile/libexec
 
-killall pipewire
-killall wireplumber
-
-pipewire &
-sleep 1
-wireplumber &
+sleep 5
 
 sleep 1
 killall -e xdg-desktop-portal-hyprland
