@@ -2,6 +2,19 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0;
+    margin: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+#waybar {
+    background-color: rgba(76, 175, 80, 0.0);
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 window#waybar {
@@ -10,20 +23,13 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    padding: 0;
+    margin: 0;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -111,6 +117,10 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
+}
+
+#window {
+    margin: 0px 4px;
 }
 
 #clock {
